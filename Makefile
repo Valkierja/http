@@ -1,5 +1,5 @@
 CFLAGS=-static -Wall -g -I/usr/local/uriparser/include/uriparser -I./vendor/buffer/src
-LDFLAGS=-L/usr/local/uriparser/lib -luriparser -L./vendor/buffer/build -lbuffer
+LDFLAGS=-L/usr/local/uriparser/lib -L/usr/include/uriparser/lib -luriparser -L./vendor/buffer/build -lbuffer
 
 SOURCES=$(wildcard src/**/*.c src/*.c)
 OBJECTS=$(patsubst %.c,%.o,$(SOURCES))
